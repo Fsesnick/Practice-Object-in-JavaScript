@@ -8,6 +8,22 @@ If your program is stuck in an infinite loop, you can break out of the program b
 */
 
 // 1. Create an object named book using object literal syntax
+
+let livro= {
+titulo: "Harry Potter e a Pedra Filosofal",
+Autor: "J.K. Rowling",
+ano_publicado: 1997
+};
+
+/*
+  for(livro_prop in livro){
+    console.log(book_prop); //nome das propriedades
+  }
+*/
+for (livro_prop in livro) {
+console.log(livro_prop+ ": " + livro[livro_prop]);
+}
+
 // 2. Add a title property to the book object and assign it a string value
 // 3. Add an author property to the book object and assign it a string value
 // 4. Add a publish_year to the book object and assign it a number to represent the year the book was published
